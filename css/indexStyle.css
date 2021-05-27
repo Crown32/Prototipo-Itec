@@ -39,6 +39,7 @@ hr {
     background-image: url(../img/index/banner.jpg);
     background-size: cover;
     background-repeat: no-repeat;
+    background-attachment: fixed;
 
     height: 100vh;
 
@@ -112,6 +113,11 @@ hr {
 .entreterimento h1{
     text-align: center;
     margin: 50px;
+}
+
+.entreterimento a i{
+    margin-top: 5px;
+    margin-left: 10px;
 }
 
 /*Monitoria*/
