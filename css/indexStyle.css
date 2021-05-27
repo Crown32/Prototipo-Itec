@@ -3,6 +3,10 @@ RGB DO AMARELO --> (254,179,0)
 As outras cores são preto, branco e um amarelo clarinho...
 RGB DO AMARELO CLARINHO --> (255,250,186)*/
 
+*{
+    scroll-behavior: smooth;
+}
+
 /*Custom hr's*/
 hr {
     border: 0;
@@ -108,4 +112,17 @@ hr {
 .entreterimento h1{
     text-align: center;
     margin: 50px;
+}
+
+/*Monitoria*/
+.monitoria{
+    margin-top: 50px;
+}
+
+.monitoria .jumbotron .lead{
+    font-weight: 400;
+}
+
+.monitoria .jumbotron p{
+    font-weight: 300;
 }
