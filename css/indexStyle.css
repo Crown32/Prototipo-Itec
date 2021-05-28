@@ -3,8 +3,18 @@ RGB DO AMARELO --> (254,179,0)
 As outras cores são preto, branco e um amarelo clarinho...
 RGB DO AMARELO CLARINHO --> (255,250,186)*/
 
+/*Auxs*/
 *{
     scroll-behavior: smooth;
+}
+
+.icon-seta{
+    margin-top: 5px;
+    margin-left: 10px;
+}
+
+img{
+    border: 1px rgb(138,32,45) dashed;
 }
 
 /*Custom hr's*/
@@ -36,7 +46,8 @@ hr {
 
 /*Formatação banner*/
 .banner{
-    background-image: url(../img/index/banner.jpg);
+    background-image: url(../img/login/bg-01.jpg);
+    background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
@@ -85,8 +96,9 @@ hr {
 }
 
 .quemSomos .content figure img{
-    max-width:750px;
-    width: 100%;
+    max-height:750px;
+    height: 100%;
+    text-align: center;
 }
 
 .ytVideoContainer{
@@ -115,11 +127,6 @@ hr {
     margin: 50px;
 }
 
-.entreterimento a i{
-    margin-top: 5px;
-    margin-left: 10px;
-}
-
 /*Monitoria*/
 .monitoria{
     margin-top: 50px;
@@ -132,3 +139,25 @@ hr {
 .monitoria .jumbotron p{
     font-weight: 300;
 }
+
+/*Suporte Taylor*/
+.suporte .content div p{
+    margin-top: 60px;
+    max-width: 1000px;
+}
+
+.suporte .content{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap-reverse;
+    align-items: center;
+    text-align: center;
+}
+
+.suporte .content figure img{
+    margin-bottom: 20px;
+    max-width:750px;
+    width: 100%;
+}
+
+/*Footer*/
