@@ -1,198 +1,37 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="pt-BR">
 
 <head>
-    <!-- Required meta tags -->
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
-        integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
-
-    <!--Meu css-->
-    <link rel="stylesheet" href="css/painelAlunoStyle.css">
-    <!--Chatbot css-->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, shrink-to-fit=yes">
+    <title>ITEC SISTEM</title>
+    <meta name="description" content="Chat Bot UI/UX & html for web" />
+    <meta name="keywords" content="Chat Bot UI/UX & html for web, UI/UX for chat bot, chat bot html, best chatbot, chatbot app, online chat bot plugin" />
+    <meta name="author" content="css3transition" />
+    <link rel="shortcut icon" href="../favicon.ico">
+    <meta name="description" content="Chat Bot UI/UX & html for web, UI/UX for chat bot, chat bot html, best chatbot, chatbot app, online chat bot plugin | Css3Transition " />
+    <meta name="keywords" content="Chat Bot UI/UX & html for web, UI/UX for chat bot, chat bot html, best chatbot, chatbot app, online chat bot plugin" />
+    <meta name="abstract" content="Chat Bot UI/UX & html for web, UI/UX for chat bot, chat bot html, best chatbot, chatbot app, online chat bot plugin">
+    <meta name="author" content="Rahul Yaduvanshi">
+    <meta name="technologies" content="HTML5, CSS3, HTML, CSS, JQUERY, Bootstrap, Angular">
+    <meta name="distribution" content="Global">
+    <meta name="development" content="Rahul Yaduvanshi">
+    <meta name="robots" content="index, follow">
+    <meta name="googlebot" content="index, follow">
+    <meta name="city" content="New Delhi">
+    <meta name="country" content="india">
+    <!-- BEGIN GLOBAL MANDATORY STYLES -->
     <link href="https://fonts.googleapis.com/css?family=Nunito:400,600,700" rel="stylesheet">
-    <link href="css/chatbotMain.css" rel="stylesheet" type="text/css" />
+    <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+    <link href="css/main.css" rel="stylesheet" type="text/css" />
     <!-- END GLOBAL MANDATORY STYLES -->
     <link href="css/select2.min.css" rel="stylesheet" type="text/css" />
     <link href="css/chatBot.css" rel="stylesheet" type="text/css" />
     <link href="css/timeline.css" rel="stylesheet" type="text/css" />
-
-    <title>Painel estudante</title>
 </head>
 
 <body>
-    <!--Navbar-->
-    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
-        <a class="navbar-brand" href="#">ITEC SISTEM</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav mr-auto">
-                <li class="nav-item active">
-                    <a class="nav-link" href="#quemSomos">Atividades<span class="sr-only">(current)</span></a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#entreterimento">Aulas</a>
-                </li>
-                <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
-                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                        Jogos
-                    </a>
-                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                        <a class="dropdown-item" href="#">Artes</a>
-                        <a class="dropdown-item" href="#">Biologia</a>
-                        <a class="dropdown-item" href="#">Conteúdos extras</a>
-                        <a class="dropdown-item" href="#">Educação física</a>
-                        <a class="dropdown-item" href="#">Filosofia</a>
-                        <a class="dropdown-item" href="#">Física</a>
-                        <a class="dropdown-item" href="#">Geografia</a>
-                        <a class="dropdown-item" href="#">História</a>
-                        <a class="dropdown-item" href="#">Informática</a>
-                        <a class="dropdown-item" href="#">Inglês</a>
-                        <a class="dropdown-item" href="#">Literatura</a>
-                        <a class="dropdown-item" href="#">Matemática</a>
-                        <a class="dropdown-item" href="#">Português</a>
-                        <a class="dropdown-item" href="#">Química</a>
-                        <a class="dropdown-item" href="#">Sociologia</a>
-                        <a class="dropdown-item" href="#">Teatro</a>
-                    </div>
-                </li>
-                <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
-                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                        Excursões
-                    </a>
-                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                        <a class="dropdown-item" href="#">Artes</a>
-                        <a class="dropdown-item" href="#">Biologia</a>
-                        <a class="dropdown-item" href="#">Conteúdos extras</a>
-                        <a class="dropdown-item" href="#">Educação física</a>
-                        <a class="dropdown-item" href="#">Filosofia</a>
-                        <a class="dropdown-item" href="#">Física</a>
-                        <a class="dropdown-item" href="#">Geografia</a>
-                        <a class="dropdown-item" href="#">História</a>
-                        <a class="dropdown-item" href="#">Informática</a>
-                        <a class="dropdown-item" href="#">Inglês</a>
-                        <a class="dropdown-item" href="#">Literatura</a>
-                        <a class="dropdown-item" href="#">Matemática</a>
-                        <a class="dropdown-item" href="#">Português</a>
-                        <a class="dropdown-item" href="#">Química</a>
-                        <a class="dropdown-item" href="#">Sociologia</a>
-                        <a class="dropdown-item" href="#">Teatro</a>
-                    </div>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Apoio</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Suporte</a>
-                </li>
-            </ul>
-        </div>
-    </nav>
-    <!--Fim navbar-->
-
-    <!--Banner de fundo-->
-    <div class="banner">
-        <div>
-            <h1>Painel do Aluno</h1>
-            <p>Seu local de estudos melhor do que nunca</p>
-            <a class="btn btn-primary" href="#">Veja suas atividades</a>
-        </div>
-    </div>
-    <!--Fim banner de fundo-->
-
-    <!--Corpo da página com margem-->
-    <section class="corpoComMargem">
-        <!--Post-it atividaddes-->
-        <div class="painelPostIts">
-             <br>
-            <h1>Suas atividades</h1>
-            <hr class="center-ball">
-            <ul>
-                <li>
-                    <div class="note">
-                        <h2>Title #1</h2>
-                        <p>Text Content</p>
-                        <a href="entregas.html" class="btn btn-primary">Entregar</a>
-                    </div>
-                </li>
-                <li>
-                    <div class="note">
-                        <h2>Title #1</h2>
-                        <p>Text Content</p>
-                        <a href="entregas.html" class="btn btn-primary">Entregar</a>
-                    </div>
-                </li>
-                <li>
-                    <div class="note">
-                        <h2>Title #1</h2>
-                        <p>Text Content</p>
-                        <a href="entregas.html" class="btn btn-primary">Entregar</a>
-                    </div>
-                </li>
-                <li>
-                    <div class="note">
-                        <h2>Title #1</h2>
-                        <p>Text Content</p>
-                        <a href="entregas.html" class="btn btn-primary">Entregar</a>
-                    </div>
-                </li>
-                <li>
-                    <div class="note">
-                        <h2>Title #1</h2>
-                        <p>Text Content</p>
-                        <a href="entregas.html" class="btn btn-primary">Entregar</a>
-                    </div>
-                </li>
-                <li>
-                    <div class="note">
-                        <h2>Title #1</h2>
-                        <p>Text Content</p>
-                        <a href="entregas.html" class="btn btn-primary">Entregar</a>
-                    </div>
-                </li>
-                <li>
-                    <div class="note">
-                        <h2>Title #1</h2>
-                        <p>Text Content</p>
-                        <a href="entregas.html" class="btn btn-primary">Entregar</a>
-                    </div>
-                </li>
-                <li>
-                    <div class="note">
-                        <h2>Title #1</h2>
-                        <p>Text Content</p>
-                        <a href="entregas.html" class="btn btn-primary">Entregar</a>
-                    </div>
-                </li>
-            </ul>
-        </div>
-        <!--Fim Post-it atividaddes-->
-        <!--Entrar na aula-->
-        <div class="acessarAula">
-            <h1>Insira aqui seu código de aula</h1>
-            <hr class="center-ball">
-            <div class="input-group flex-nowrap">
-                <div class="input-group-prepend">
-                  <span class="input-group-text" id="addon-wrapping">@</span>
-                </div>
-                <input type="text" class="form-control" placeholder="Username" aria-label="Username" aria-describedby="addon-wrapping">
-                <a href="aula.html" class="btn btn-success">Acessar</a>
-              </div>
-        </div>
-        <!--Fim entrar na aula-->
-    </section>
-    <!--Fim corpo da página com margem-->
-
-    <!--Chatbot-->
     <!-- Chat bot UI start -->
     <div class="chat-screen">
         <div class="chat-header">
@@ -365,9 +204,6 @@
     <script src="https://ajax.cloudflare.com/cdn-cgi/scripts/7089c43e/cloudflare-static/rocket-loader.min.js" data-cf-settings="257be86a981729866f2fa61c-|49" defer=""></script>
     <!-- Time line Html Ends -->
     <!-- BEGIN GLOBAL MANDATORY SCRIPTS -->
-    <script src="js/jquery-3.1.1.min.js"></script>
-    <script src="js/popper.min.js"></script>
-    <script src="js/bootstrap.min.js"></script>
     <script src="js/select2.min.js"></script>
     <script>
         $(document).ready(function() {
@@ -396,16 +232,6 @@
             });
         });
     </script>
-    <!--Fim chatbot-->
-
-    <!-- Option 1: jQuery and Bootstrap Bundle (includes Popper) -->
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
-        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
-        crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx"
-        crossorigin="anonymous"></script>
-
 </body>
 
 </html>

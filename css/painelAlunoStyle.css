@@ -1,0 +1,146 @@
+*{
+    scroll-behavior: smooth;
+}
+
+/*Custom hr's*/
+hr {
+    border: 0;
+    height: 1px;
+    width: 40%;
+    position: relative;
+    margin: 30px auto;
+}
+
+.center-ball {
+    background: rgb(138,32,45);
+}
+
+.center-ball::before{
+        content: "";
+        width: 8px;
+        height: 8px;
+        background: rgb(138,32,45);
+        display: inline-block;
+        border: 2px solid rgb(138,32,45);
+        border-radius:50%;
+        position: absolute;
+        top: -3px;
+        left: 50%;
+        margin: 0 0 0 -3px;
+}
+
+/*Formatação banner*/
+.banner{
+    background-image: url(../img/paisagem/Apoio.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+
+    height: 100vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.banner div{
+    text-align: center;
+    color: white;
+}
+
+.banner div h1{
+    font-size: 60px;
+}
+
+.banner div p{
+    font-size: 30px;
+    font-weight: 500;
+}
+
+/*Corpo com margem*/
+.corpoComMargem{
+    margin: 50px;
+}
+
+/*Post it atividades*/
+.painelPostIts h1{
+    margin-top: 20px;
+    color: white;
+    text-align: center;
+}
+
+.painelPostIts{
+    border-radius: 15px;
+    background-image: url(../img/materias/chalkboard.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.painelPostIts h2 {
+    font-weight: bold;
+    font-size: 2rem;
+  }
+  .painelPostIts p {
+    font-family: 'Reenie Beanie';
+    font-size: 2rem;
+  }
+  .painelPostIts ul,li{
+    list-style:none;
+  }
+  .painelPostIts ul{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .painelPostIts ul li .note{
+    min-height: 220px;
+    min-width: 220px;
+    text-decoration:none;
+    color:#000;
+    background:#ffc;
+    display:block;
+    height:10em;
+    width:10em;
+    padding:1em;
+    box-shadow: 5px 5px 7px rgba(33,33,33,.7);
+    transform: rotate(-6deg);
+    transition: transform .15s linear;
+  }
+  
+  .painelPostIts ul li:nth-child(even) .note{
+    transform:rotate(4deg);
+    position:relative;
+    top:5px;
+    background:#cfc;
+  }
+  .painelPostIts ul li:nth-child(3n) .note{
+    transform:rotate(-3deg);
+    position:relative;
+    top:-5px;
+    background:#ccf;
+  }
+  .painelPostIts ul li:nth-child(5n) .note{
+    transform:rotate(5deg);
+    position:relative;
+    top:-10px;
+  }
+  
+  .painelPostIts ul li .note:hover,ul li .note:focus{
+    box-shadow:10px 10px 7px rgba(0,0,0,.7);
+    transform: scale(1.25);
+    position:relative;
+    z-index:5;
+  }
+  
+  .painelPostIts ul li{
+    margin:3em;
+  }
+
+/*Acessar aula*/ 
+.acessarAula{
+    padding: 30px;
+    border-radius: 15px;
+    background-color: rgb(231, 231, 231);
+}
